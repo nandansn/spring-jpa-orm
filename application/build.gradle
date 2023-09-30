@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.hibernate:hibernate-core:5.6.5.Final' // Replace with the latest version
+    implementation 'mysql:mysql-connector-java:8.0.27' // Replace with the latest version
+    implementation 'javax.persistence:javax.persistence-api:2.2' // This is the JPA 2.2 version
+
+}
+
+test {
+    useJUnitPlatform()
+}
